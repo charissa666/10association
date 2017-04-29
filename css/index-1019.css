@@ -1,0 +1,163 @@
+﻿@charset "utf-8";
+.top{ height:180px; position:relative; }
+.none{ display:none;}
+
+.topwrap{ background:#fff; }
+#branch{width:1200px; margin:0 auto;position:relative; font-family:"Microsoft YaHei"; }
+
+
+
+/*首页 轮播*/
+#branch .cycle {width:1200px; height:420px; position:relative; z-index:1;}
+#branch .cycInner {width:100%; height:100%; position:relative; overflow:hidden;}
+#branch .cycInner img{ display:block; width:100%; height:100%;}
+#branch .cycInner .num {z-index:10; position:absolute; left:800px; bottom:20px;}
+#branch .cycInner .num a {display:block; width:15px; height:15px; border-radius:8px; background:#999999; text-indent:-9999px; float:left; margin:0 8px; cursor:pointer; overflow:hidden;}
+#branch .cycInner .num a.active {background:#0054a7;}
+
+#branch .leftnav{ width:208px; position:absolute; left:0; top:10px; border-bottom:2px solid #3CD178; z-index:2; background:#FFF;}
+
+#branch .leftnavtop{ height:36px; font:14px/36px "Microsoft YaHei"; color:#FFF; padding-left:10px; background:#3CD178;}
+#branch .leftnav ul .srSort{width:204px; height:44px;border-top:1px solid #ccc; border-left:2px solid #3CD178;border-right:2px solid #3CD178; }
+#branch .leftnav ul .srSort .cusort{ display:block; padding-left:20px; height:44px;  font:14px/44px "Microsoft YaHei"; color:#333333;}
+#branch .leftnav ul .srSort .lownav{width:730px; min-height:374px; overflow:hidden; padding:10px; background:#fff; border:2px solid #3CD178; position:absolute; top:0px; left:206px;z-index:-1;}
+#branch .leftSort{ width:355px; min-height:374px; padding-right:9px; overflow:hidden; border-right:1px dashed #6fc3e4; float:left;}
+#branch .leftSort .delSort{ width:355px; overflow:hidden;}
+#branch .leftSort .delSort strong{ width:355px; height:28px; line-height:28px; overflow:hidden; border-bottom:1px dashed #d0ebf4; font-size:14px; color:#21a8dd; display:inline-block;}
+#branch .leftSort .delSort .delsortSort{ width:365px; overflow:hidden; padding-top:5px;}
+#branch .delsortSort li{ float:left; padding:0 15px; height:22px; line-height:22px; overflow:hidden; overflow:hidden;}
+#branch .delsortSort li a{ color:#666; font-size:12px;height:22px; line-height:22px; overflow:hidden;}
+#branch .delsortSort li a:hover{ text-decoration:underline;}
+#branch .rightAd{ float:left; width:355px; overflow:hidden; padding-left:10px;}
+#branch .rightAd strong{ height:32px; line-height:32px; font-size:18px; color:#3CD178;}
+#branch .rightAd .brendbox{ width:351px;overflow:hidden; border:1px solid #ededed;}
+#branch .rightAd .brendbox a{ width:115px; height:42px; overflow:hidden; float:left; display:inline-block; border:1px solid #ededed;}
+#branch .rightAd .adpic{ width:190px; height:180px; overflow:hidden; display:inline-block; float:right; padding-right:5px; padding-top:10px;}
+
+/* CSS Document */
+
+.rightbar{ width:223px; height:396px; overflow:hidden; border:1px solid #d3f3ff;}
+.rightbar h2{ height:32px; line-height:32px;overflow:hidden; background:#f3f3f3; font-weight:normal; font-size:14px; padding:0 10px;}
+.rightbar h2 a{ float:right; color:#0054a7; font-size:12px; }
+.rightbar .list{ width:203px; overflow:hidden; padding:0 10px;}
+.rightbar .list li{ background:url(http://img.yaofang.cn/image1/cate/images/index/dot.jpg) no-repeat 0px 15px;width:203px; height:32px; line-height:32px; overflow:hidden; border-bottom:1px dotted #eaeaea; text-indent:5px;}
+.rightbar .list li a{ color: #666;font-size:12px; }
+.rightbar .list li.bordernone{ border-bottom:none;}
+.rightbar .listfendian{ width:203px; overflow:hidden; padding:0 10px;}
+.rightbar .listfendian li{ width:100px; height:32px; line-height:32px; overflow:hidden; text-align:center; float:left;}
+.rightbar .listfendian li a{ color:#385dc5; font-size:12px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#branch .leftnav ul.bignav li{ height:59px;  border-bottom:1px solid #cccccc; padding-left:20px;position:relative;}
+#branch .leftnav ul.bignav li a{ height:50px; padding-top:10px; display:inline; border:none; padding:0;}
+#branch .leftnav ul.bignav li span{ display:block; line-height:20px;}
+#branch .leftnav ul.bignav li span.dyh{ position:absolute; right:20px; top:21px; width:10px; height:20px;}
+#branch .leftnav ul.bignav li p{ width:100%; height:20px;}
+#branch .leftnav ul.bignav li a.bigtit{  font-weight:bold;}
+#branch .leftnav ul.bignav li a.smalltit{ padding:0 5px 0 0;}
+#branch .leftnav ul li.noborder{ border:none;}
+
+#branch .rightbar{ width:225px; height:398px; position:absolute; right:5px; top:10px; border:1px solid #d3f3ff; z-index:2; background:#FFF;}
+#branch .rightbartitle{ height:40px; font:14px/36px "Microsoft YaHei"; color:#000; padding-left:10px; font-weight:bold;}
+#branch .rightbar ul li{ height:27px; }
+#branch .rightbar ul li a:hover{ color:#ff0000;}
+#branch .rightbar ul { width:90%; margin:0 auto; height:195px; border-bottom:1px dashed #d3f3ff;}
+#branch .rightbarapp{ width:90%; margin:0 auto;}
+#branch .rightbarapp .code{}
+#branch .rightbarapp .code img{ display:block; width:88px; float:left; margin-right:10px;}
+#branch .rightbarapp .code .client{ float:left; width:100px; margin-top:30px;}
+#branch .rightbarapp .code .client p{ margin-bottom:5px; color:#666666; font:14px/20px "Microsoft YaHei";}
+#branch .rightbarapp .code .client a{ display:block; width:90px; height:29px; background:#0054a7; color:#FFF; font:14px/29px "Microsoft YaHei"; text-align:center;}
+#branch .rightbarcon{ display:none; position:relative; z-index:1;}
+#branch .rightbarinner{ position:absolute;  left:5%; bottom:20px;z-index:10;}
+#branch .rightbarinner a {display:block; width:15px; height:15px; border-radius:8px; background:#999999; text-indent:-9999px; float:left; margin:0 8px; cursor:pointer; overflow:hidden;}
+#branch .rightbarinner a.act, #branch .rightbarinner a:hover{ background:#0054a7;}
+
+#cover {width:1200px; margin:0 auto;position:relative;}
+#cover .coltitle{ padding:0 20px; font:18px/44px "Microsoft YaHei"; color:#3CD178; height:44px; border-bottom:2px solid #3CD178;}
+#cover .coltitle h2{ float:left; font-size: 18px;}
+#cover .coltitle a{ display:block; float:right; margin-left:10px; color:#929292; font:12px/44px "Microsoft YaHei";}
+#cover .coltitle a:hover{ text-decoration:underline; color:#3CD178;} 
+#cover .coltitle a.more{ color:#3CD178;}
+
+#cover .conbox{ height:534px; width:1198px; border:1px solid #ebebeb; border-top:none;}
+#cover .conboxleft{ width:276px; height:534px; float:left; border-right:1px solid #ebebeb;}
+#cover .conboxmid{ width:692px; height:534px; float:left; border-right:1px solid #ebebeb;}
+#cover .conboxright{ width:228px; height:534px; float:left;}
+#cover .conboxleft .conbltop{ height:290px;}
+#cover .conboxleft .conbltop ul li{ float:left; width:120px; margin-left:12px; height:41px; text-align:center; overflow:hidden;}
+#cover .conboxleft .conbltop ul li a{color:#1b1b1b; font:14px/41px "Microsoft YaHei";}
+
+#cover .conboxleft .subrand { position:relative; height:242px}
+#cover .conboxleft .subrand p{ color:#3CD178; font:16px/30px "Microsoft YaHei"; padding-left:10px;}
+#cover .conboxleft .subrand .randcycle{ padding-left:10px;}
+
+#cover .conboxleft .subrand li{ width:266px; height:110px;}
+#cover .conboxleft .subrand li img{ border:1px solid #f3f1f2; float:left; height:45px; margin:10px 5px 5px 0;}
+#cover .conboxleft .subrand ul{}
+#cover .conboxleft .subrand .num {z-index:10; position:absolute; left:91px; bottom:10px;}
+#cover .conboxleft .subrand .num a {display:block; width:15px; height:15px; border-radius:8px; background:#7f7f7f; text-indent:-9999px; float:left; margin:0 8px; cursor:pointer; overflow:hidden;}
+#cover .conboxleft .subrand .num a.active,#cover .conboxleft .subrand .num a:hover {width:15px;background:#3CD178;}
+
+#cover .conboxmidtab{ height:40px;}
+#cover .conboxmidtab li{ width:171px; height:39px; border:1px solid #ebebeb; border-top:none; float:left;}
+#cover .conboxmidtab li a{ display:block; width:100%; height:100%; background:#FFF; text-align:center; color:#333333; font:14px/39px "Microsoft YaHei";}
+#cover .conboxmidtab li a:hover,#cover .conboxmidtab li a.act{ background:#3CD178; color:#FFF;}
+
+
+#cover .conboxmidproduct li{ width:230px; height:247px; float:left;}
+#cover .conboxmidproduct li a.productimg{ display:block;}
+#cover .conboxmidproduct li a.productimg img{ display:block; width:190px; height:150px; padding-left:15px; padding-right:15px; padding-top:15px;}
+#cover .conboxmidproduct li p.title {  height:30px; line-height: 30px; overflow:hidden; text-align:center;}
+#cover .conboxmidproduct li p.title a{ color:#333333; height: 30px; line-height: 30px; overflow: hidden; display: inline-block;}
+#cover .conboxmidproduct li p.price{ height:30px; color:#fe0000;  font:16px/20px "Microsoft YaHei"; text-align:center;}
+
+#cover .conboxright1 a{ width:228px; height:266px; display:block; border-bottom:1px solid #ebebeb; overflow:hidden;}
+#cover .conboxright1 a.noborder{ border:none;}
+#cover .conboxright1 a img{ display:block; width:228px; height:266px;}
+
+
+#cover .comment{ width:100%; height:322px; margin-top:10px;}
+#cover .commentleft{ float:left; width:958px; height:320px; margin-right:10px; border:1px solid #ebebeb;}
+#cover .commentright{ float:left; width:230px; height:322px;}
+#cover .commentleft .title{ height:30px; border-bottom:1px solid #ebebeb; color:#333333;  font:16px/30px "Microsoft YaHei"; padding-left:20px;}
+#cover .commentleft ul li{ width:459px; height:85px; float:left; padding-left:20px; margin-top:11px;}
+#cover .commentleft ul li img{ display:block; float:left; margin-right:10px; border:1px solid #eaeaea;}
+#cover .commentcon{ width:375px; float:left; color:#999999;  font:14px/20px "Microsoft YaHei";}
+#cover .commentcon p{ height:48px;}
+#cover .commentcon p.info{ height:20px;}
+
+
+#cover .health{ height:99px; border:1px solid #ebebeb; padding-left:20px; margin-top:20px;}
+#cover .health p{ color:#666666; font-size:12px; line-height:24px;}
+#cover .health p.title{ color:#333333; font:13px/40px "Microsoft YaHei"; height:40px; border-bottom:1px dashed #ebebeb; font-weight:bold; margin-bottom:5px;}
+
+#cover .link{ border:1px solid #ebebeb; border-bottom:none;  margin-top:10px; height:93px;}
+#cover .link a{ display:block; width:132px; height:46px;  float:left; background:url(../../images/plyh/dashed.jpg) no-repeat right center; padding-right:1px;}
+#cover .link a img{ display:block; width:132px; height:46px;}
+#cover .link a.noborder{ background:none;}
+#cover .link .line{ width:1198px; height:46px; border-bottom:1px solid #ebebeb;}
+
+
+#branch .radius{-moz-border-radius: 5px;-webkit-border-radius: 5px;  border-radius:5px;   }
+
+
+
+
+
+

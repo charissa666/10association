@@ -1,0 +1,53 @@
+body{background:#f5f5f5; padding-bottom:0.9rem;}
+/*社群内容*/
+.asso_item1{width:7.5rem;height:100%;margin-top:0.12rem;background:#f5f5f5;border-top:1px solid #e6e6e6;}
+.asso_box{width:100%;background:#fff;}
+.asso_list{height:1.95rem;border-bottom:1px solid #e6e6e6;}
+.asso_logo{width:1.42rem;border-radius:0.25rem;border:1px solid #d2d2d2;float:left;margin:0.25rem 0.2rem 0 0.26rem;}
+.asso_name{float:left;}
+.asso_name>h3{font-size:0.4rem;margin:0.3rem 0 0.28rem 0;font-weight:normal;width:4.7rem;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.asso_name>p{font-size:0.3rem;color:#666;}
+.asso_mark{float:right;margin:0.84rem 0.22rem 0 0;}
+.unread{display:inline-block;width:0.2rem;height:0.2rem;border-radius:0.1rem;background:#f00;position:relative;top:-0.05rem;}
+.arrows{display:inline-block;width:0.2rem;height:0.29rem;background:url(../images/arrows.png) no-repeat;background-size: contain;}
+.asso_btn{padding-top:1.2rem;padding-bottom:1.5rem;}
+.asso_establish{background:#f15c46;color:#fff;margin:0 auto;}
+.asso_find{color:#bfbfbf;text-align: center;margin-top:0.7rem;margin-bottom:0.5rem;}
+
+/*发现内容*/
+.asso_item2{width:7.5rem; padding-bottom:0.9rem;}
+.find_list{height:3rem;background:#fff;padding:0.3rem 0 0.1rem 0;box-sizing: border-box;border-bottom: 1px solid #e6e6e6;margin: 0.2rem 0 0.15rem 0;}
+.find_ul{margin-bottom: 0.3rem;overflow: hidden;padding-left:0.05rem;}
+.find_ul li{width:1.5rem;text-align: center;float: left;margin:0 0.18rem 0.3rem;}
+.find_ul li>img{display:block;width:0.6rem;height:0.6rem;margin:0 auto 0.1rem;}
+.find_item{width:7.5rem;background:#fff;}
+.find_tiem_tit{width:2.46rem;height:0.32rem;margin:0 auto 0.1rem;border-bottom:1px solid #d2d2d2;text-align: center;}
+.find_tiem_tit>span{display: inline-block;padding:0 0.4rem;height:0.3rem;background:#fff;margin-top:0.15rem;font-size:0.3rem;color:#999;}
+.find_more{height:0.9rem;line-height: 0.9rem;text-align: center;color:#bbbbbb;font-size: 0.3rem;background:#F5F5F5;border-top:1px solid #F5F5F5;margin-top:-1px;}
+
+/*我的内容*/
+.asso_item3{background:#fff;width:7.5rem;overflow: hidden;height:100%;}
+.my_txt{width:4.2rem;margin:0.46rem auto 0.3rem;text-align: center;}
+.my_txt>p{line-height: 0.4rem;}
+.erwei{width:3.06rem;height:3.03rem;margin:0 auto 0.32rem;display: table-cell;}
+.my_inf{width:100%;text-align: center;border-top:0.1rem solid #f7f7f7;border-bottom:0.05rem solid #f7f7f7;padding-top:0.23rem;}
+.my_inf>img{width:1.24rem;height:1.24rem;border-radius: 50%;margin-bottom: 0.1rem;}
+.my_name>span:nth-child(2){display: inline-block; width: 0.25rem; height: 0.25rem;background: url(../images/icon_03.png) no-repeat; background-size: contain;margin-left:0.1rem;}
+.my_cre_div{overflow: hidden;margin:0.26rem auto 0.3rem;width:6.5rem;}
+.my_cre_div>.my_cre:first-child{float:left;}
+.my_cre{float:right;width:3.07rem;height:0.6rem;line-height:0.6rem;background:#dc5300;border-radius: 0.15rem;color:#fff;text-align: center;box-shadow: 1px 1px 1px #ccc;}
+.my_help{width:6.9rem;height:1.8rem;border:1px solid #ccc;margin:0.25rem auto 0;}
+.my_help>a{height:0.88rem;line-height: 0.88rem;padding-left:0.2rem;}
+.my_help>a:first-child{border-bottom:1px solid #ccc;}
+.my_help>a>span{display:inline-block;width:0.21rem;height:0.4rem;background:url(../images/arrows.png) no-repeat;background-size: contain;float: right;margin:0.25rem 0.21rem 0 0;}
+.my_amend{display:none;width:5rem;height:3rem;background:#f7f7f7;position:fixed;left:50%;margin-left:-2.5rem;top:2rem;border:1px solid #ccc;border-radius: 0.2rem;box-sizing: border-box;padding-top: 0.9rem;}
+.my_amend>input{width:3.8rem;border:1px solid #b1b0b0;height:0.6rem;line-height: 0.6rem;margin-left:0.4rem;padding-left:0.2rem;}
+.amend_btn{margin-top:0.6rem;}
+.amend_btn>span{display:inline-block;height:0.6rem;width:1.8rem;border-radius: 0.2rem;line-height: 0.6rem;text-align: center;}
+.amend_btn>span:first-child{border:1px solid #999;color:#999;margin:0 0.3rem 0 0.45rem;}
+.amend_btn>span:nth-child(2){border:1px solid #dc5300;color:#dc5300;}
+
+/*首页底部样式*/
+.foot{width:7.5rem;height:0.9rem;line-height:0.9rem;background:#eee;border-top:1px solid #bfbfbf;position:fixed;bottom:0;color:#666;font-size:0.32rem;}
+.foot>a{float:left;width:2.5rem;text-align:center;}
+.foot>a.on{color:#f95f48;}

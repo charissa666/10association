@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>高血压社群</title>
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/spe_cont.css"/>
+		<script src="../../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/jquery1.7.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--loading加载开始-->
+		<div id="s_shade"></div>
+		<div class="spinner" id="spinner">
+			<div class="spinner-container container1">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container2">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container3">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+		</div>
+		<!--loading加载结束-->
+		<div class="ser_list">
+			<div class="ser_item1">
+				<img src="../../images/ser_pho.jpg"/>
+				<b>古药师</b>
+			</div>
+			<ul class="ser_item2">
+				<li>14年执业药师经验</li>
+				<li>经验丰富</li>
+				<li>指导用药精准合理</li>
+			</ul>
+			<a class="ser_item3" href="tel:18688888888">开始咨询</a>
+		</div>
+		<div class="ser_list">
+			<div class="ser_item1">
+				<img src="../../images/ser_pho.jpg"/>
+				<b>古药师</b>
+			</div>
+			<ul class="ser_item2">
+				<li>14年执业药师经验</li>
+				<li>经验丰富</li>
+				<li>指导用药精准合理</li>
+			</ul>
+			<a class="ser_item3" href="tel:18688888888">开始咨询</a>
+		</div>
+		<div class="ser_list">
+			<div class="ser_item1">
+				<img src="../../images/ser_pho.jpg"/>
+				<b>古药师</b>
+			</div>
+			<ul class="ser_item2">
+				<li>14年执业药师经验</li>
+				<li>经验丰富</li>
+				<li>指导用药精准合理</li>
+			</ul>
+			<a class="ser_item3" href="tel:18688888888">开始咨询</a>
+		</div>
+	</body>
+	<script type="text/javascript">
+		//优化加载
+		var start_time = (new Date()).getTime();
+		var end_time = "" ;
+		var t = setInterval(function(){
+			if(document.readyState=="complete"){
+				aa();
+			}
+		},500)
+		function aa(){
+			end_time = (new Date()).getTime();
+		//		alert(end_time - start_time);
+			clearInterval(t);
+			$('#spinner').hide();
+			$('#s_shade').hide();
+		}
+	</script>
+</html>

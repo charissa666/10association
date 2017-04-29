@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>高血压社群</title>
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/asso_detail.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/mem_cont.css"/>
+		<script src="../../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/jquery1.7.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/touch.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/iscroll.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--loading加载开始-->
+		<div id="s_shade"></div>
+		<div class="spinner" id="spinner">
+			<div class="spinner-container container1">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container2">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container3">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+		</div>
+		<!--loading加载结束-->
+		<div id="wrapper">
+			<div id="scroller">
+				<div id="pullDown">
+					<span class="pullDownIcon"></span><span class="pullDownLabel">下拉刷新...</span>
+				</div>
+				<div id="thelist">
+					<!--头部内容开始-->
+					<div class="head">
+						<img class="head_l" src="../../images/asso_logo.jpg"/>
+						<div class="head_c">
+							<h3>高血压社群</h3>
+							<p>稳定血压，爱护人生</p>
+							<p>
+								<span>ID</span>
+								<span>3008</span>
+								<span class="icon01"></span>
+								<span>605</span>
+							</p>
+						</div>
+						<div class="head_r">
+							<a class="head_r_btn00" href="../index/index_asso.html">回到首页</a>
+							<a class="head_r_btn02" href="javascript:;">+关注</a>
+						</div>
+					</div>
+					<!--头部内容结束-->
+					<!--导航列表-->
+					<nav class="nav_list">
+						<a href="../高血压社群-交流/asso_detail.html">交流</a>
+						<a href="../高血压社群-专题/asso_detail_spe.html">专题</a>
+						<a class="on" href="javascript:;">成员</a>
+						<a href="../服务2/serve.html">服务</a>
+					</nav>
+					<!--成员模块 start-->
+					<div class="asso_detail_03">
+						<a class="member_list" href="../成员管理页/member_detail.html">
+							<img src="../../images/m_pho01.jpg" />
+							<span>刘小二</span>
+							<i class="m_tag m_tag_a">群主</i>
+						</a>
+						<a class="member_list" href="../成员管理页/member_detail.html">
+							<img src="../../images/m_pho02.jpg" />
+							<span>香橙</span>
+							<i class="m_tag m_tag_b">管理员</i>
+						</a>
+						<a class="member_list" href="../成员管理页/member_detail.html">
+							<img src="../../images/m_pho03.jpg" />
+							<span>瑞文</span>
+						</a>
+						<a class="member_list" href="../成员管理页/member_detail.html">
+							<img src="../../images/m_pho01.jpg" />
+							<span>风暴之怒</span>
+						</a>
+						<a class="member_list" href="../成员管理页/member_detail.html">
+							<img src="../../images/m_pho03.jpg" />
+							<span>番茄炒饭</span>
+						</a>
+					</div>
+					<!--成员模块 end-->
+				</div>
+				<div id="pullUp" style="display:none;" >
+					<span class="pullUpIcon"></span><span class="pullUpLabel">上拉加载更多...</span>
+				</div>
+			</div>
+		</div>
+		<!--生成社群二维码开始-->
+		<div class="w_shade">
+			<div id="weima"></div>
+		</div>
+		<!--生成社群二维码结束-->
+	</body>
+	<script src="../../js/jquery.qrcode.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/utf.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/asso_detail.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	//优化加载
+	var start_time = (new Date()).getTime();
+	var end_time = "" ;
+	var t = setInterval(function(){
+		if(document.readyState=="complete"){
+			aa();
+		}
+	},500)
+	function aa(){
+		end_time = (new Date()).getTime();
+	//		alert(end_time - start_time);
+		clearInterval(t);
+		$('#spinner').hide();
+		$('#s_shade').hide();
+	}	
+		/**
+		 * 下拉刷新 （自定义实现此方法）
+		 * myScroll.refresh(); 数据加载完成后，调用界面更新方法
+		 */
+		function pullDownAction() {
+			setTimeout(function() {
+				document.getElementById("pullUp").style.display = "";
+				myScroll.refresh();
+			}, 1000);
+		}
+		/**
+		 * 滚动翻页 （自定义实现此方法）
+		 * myScroll.refresh();      // 数据加载完成后，调用界面更新方法
+		 */
+		function pullUpAction() {
+			setTimeout(function() {
+				myScroll.refresh();
+			}, 1000);
+		}
+
+	</script>
+</html>

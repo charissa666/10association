@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>交流</title>
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/asso_detail.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/see_comment.css"/>
+		<script src="../../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/jquery1.7.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/touch.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/iscroll.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--loading加载开始-->
+		<div id="s_shade"></div>
+		<div class="spinner" id="spinner">
+			<div class="spinner-container container1">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container2">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container3">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+		</div>
+		<!--loading加载结束-->
+		<div id="wrapper">
+			<div id="scroller">
+				<div id="pullDown">
+					<span class="pullDownIcon"></span><span class="pullDownLabel">下拉刷新...</span>
+				</div>
+				<div id="thelist">	
+					<!--交流文章内容开始-->
+					<div class="message">
+						<div class="message_tit">
+							<img class="mtit_l" src="../../images/user_pho.png"/>
+							<div class="mtit_c">
+								<p>爱交流-高血压</p>
+								<p>
+									<span>2016-08-25 09:02:53</span>
+									<a href="../高血压社群-交流/asso_detail.html" class="a_tag">高血压社群</a>
+								</p>
+							</div>
+							<div class="mtit_r"></div>
+						</div>
+						<p class="message_txt">【教父母防高血压】每天晚上用手指在脚底板的前半部分用力摩</a><a href="http://www.baidu.com" class="message_url">网页链接</a><a>擦，使脚底发热，左右脚交替进行，每只脚至少擦30分钟，反复进行，坚持一段时间后，有高血压的血压慢慢降下，没有高血压的人也不容易得。（via健康-生活小常识）。</p>
+						<div class="message_pic">
+							<div><img src="../../images/171375859022666713.jpg"/></div>
+							<div><img src="../../images/183080607539976746.jpg"/></div>
+							<div><img src="../../images/247536031508855718.jpg"/></div>
+							<div><img src="../../images/297488268772603131.jpg"/></div>
+							<div><img src="../../images/378818327052479179.jpg"/></div>
+							<div><img src="../../images/467408808682172595.jpg"/></div>
+							<div><img src="../../images/620715352742527430.jpg"/></div>
+							<div><img src="../../images/628630098840811588.jpg"/></div>
+							<div><img src="../../images/657182730385409547.jpg"/></div>
+						</div>
+						<div class="message_btn">
+							<a class="mes_btn01" href="javascript:;">
+								<img src="../../images/btn_send.jpg"/>
+							</a>
+							<a class="mes_btn02" href="javascript:;">
+								<img src="../../images/btn_comment.jpg"/>
+								<span>10</span>
+							</a>
+							<a class="mes_btn03" href="javascript:;" onclick="zan(this);">
+								<img src="../../images/btn_zan01.jpg"/>
+								<span>60</span>
+							</a>
+						</div>
+					</div>
+					<!--交流文章内容结束-->
+					<!--评论列表开始-->
+					<div class="com_list">
+						<dl class="com_dl">
+							<dt><img src="../../images/com_img04.jpg"/></dt>
+							<dd>
+								<h3>
+									<span>郑小孩不是小孩</span>
+									<span class="c_zan" onclick="zan(this)"><img src="../../images/btn_zan01.jpg"/><span>43</span></span>
+								</h3>
+								<span>08-08 10:59</span>
+								<p>时间是种极好的东西，原谅了不可原谅的，过去了曾经过不去的。</p>
+							</dd>
+						</dl>
+						<dl class="com_dl">
+							<dt><img src="../../images/com_img04.jpg"/></dt>
+							<dd>
+								<h3>
+									<span>郑小孩不是小孩</span>
+									<span class="c_zan" onclick="zan(this)"><img src="../../images/btn_zan01.jpg"/><span>43</span></span>
+								</h3>
+								<span>08-08 10:59</span>
+								<p>时间是种极好的东西，原谅了不可原谅的，过去了曾经过不去的。</p>
+							</dd>
+						</dl>
+					</div>
+					<!--评论列表结束-->
+					
+				</div>
+				<div id="pullUp" style="display:none;" >
+					<span class="pullUpIcon"></span><span class="pullUpLabel">上拉加载更多...</span>
+				</div>
+			</div>
+		</div>
+		<!--分享遮罩开始-->
+		<div class="share_shade">
+			<div class="b_shade"></div>
+			<img src="../../images/share_hint_03.png"/>
+		</div>
+		<!--分享遮罩结束-->
+		<!--点击图片放大开始-->
+		<div class="shade">
+			<img class="shade_img" src="" />
+		</div>
+		<!--点击图片放大结束-->
+		<!--写评论开始-->
+		<div class="w_comment_div">
+			<div class="w_com_text">
+				<textarea placeholder="写评论……" id="w_textarea"></textarea>
+				<div><span id="w_span">0</span>/140</div>
+			</div>
+			<div class="w_com_btn">
+				<a href="javascript:;" class="btn w_btn01">取消</a>
+				<a href="javascript:;" class="btn w_btn02">发布</a>
+			</div>
+		</div>
+		<!--写评论结束-->
+		<!--底部删除遮罩开始-->
+		<div class="del_shade"></div>
+		<ul class="del_ul" id="del">
+			<li>删除</li>
+			<li>取消</li>
+		</ul>
+		<ul class="del_ul" id="sure_del">
+			<li>确认删除</li>
+			<li>取消</li>
+		</ul>
+		<!--底部删除遮罩结束-->
+		<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/comment_cont.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		//优化加载
+		var start_time = (new Date()).getTime();
+		var end_time = "" ;
+		var t = setInterval(function(){
+			if(document.readyState=="complete"){
+				aa();
+			}
+		},500)
+		function aa(){
+			end_time = (new Date()).getTime();
+		//		alert(end_time - start_time);
+			clearInterval(t);
+			$('#spinner').hide();
+			$('#s_shade').hide();
+		}
+			/**
+			 * 下拉刷新 （自定义实现此方法）
+			 * myScroll.refresh(); 数据加载完成后，调用界面更新方法
+			 */
+			function pullDownAction() {
+				setTimeout(function() {
+					document.getElementById("pullUp").style.display = "";
+					myScroll.refresh();
+				}, 1000);
+			}
+			/**
+			 * 滚动翻页 （自定义实现此方法）
+			 * myScroll.refresh();      // 数据加载完成后，调用界面更新方法
+			 */
+			function pullUpAction() {
+				setTimeout(function() {
+					myScroll.refresh();
+				}, 1000);
+			}
+	
+		</script>
+	</body>
+</html>

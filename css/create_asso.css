@@ -1,0 +1,35 @@
+body{background:#f7f7f7;}
+form{width:7.5rem;margin-top:0.2rem;border-top:1px solid #e6e6e6;color:#666;overflow: hidden;}
+form>div{border-bottom:1px solid #e6e6e6;padding-left:0.22rem;background:#fff;}
+form>div>span{display: inline-block;width:1rem;}
+form>div>i{color:#c0c0c0;}
+.cre_item1{height:1.14rem;line-height:1.14rem;font-size:0.3rem;padding-left:0.22rem;position:relative;}
+.cre_item1>span{width:3rem;}
+.user_photo{width:0.8rem;height:0.8rem;border-radius:0.1rem;float:right;margin-top:0.19rem;margin-right:0.6rem;}
+.upload_img{opacity:0;width:100%;height:100%;position:absolute;top:0;left:0;}
+.cre_item2{height:0.78rem;line-height:0.78rem;}
+.cre_item3{height:1.4rem;line-height:1.4rem;}
+.cre_item3>select{width:5.8rem;height:0.6rem;border:1px solid #d2d2d2;background:url(../images/select_bj_03.jpg) right top no-repeat;background-size:contain;padding-left:0.2rem;}
+.cre_item4,.cre_item9{height:0.8rem;line-height:0.8rem;padding-left:0.22rem;}
+.cre_item2>input,.cre_item4>input,.cre_item6>p>input{width:4.6rem;height:0.4rem;}
+.cre_item5{height:3.44rem;padding-top:0.26rem;}
+.cre_item5>textarea{width:6rem;height:3rem;}
+.cre_item5>i{float: right;margin-right:0.3rem;margin-top:0.05rem;}
+.cre_item6{margin-top:0.3rem;border-top:1px solid #e6e6e6;}
+.cre_item6>p{height:0.8rem;line-height:0.8rem;}
+.cre_item6>p:first-child{border-bottom:1px solid #e6e6e6;}
+.cre_item6>p>span{display: inline-block;width:1.7rem;}
+.cre_item7{background:#d2d2d2;margin:0.54rem auto 0.9rem;color:#fff;}
+.cre_item8{height:0.8rem;line-height:0.8rem;padding-left:0.22rem;}
+.cre_item8>span{width:2rem;}
+form>.cre_item9>span{width:1.2rem;}
+.cre_item9>input{margin-left:0.15rem;}
+
+#kt_zan{display: none;}
+.kt_zan{display:block;float:right;width:1.1rem;height:0.63rem;background:#e5e5e5;border-radius: 0.35rem;margin-top:0.08rem;position:relative;margin-right:0.3rem;}
+.kt_zan>span{display: block;width:0.56rem;height:0.56rem;border-radius: 50%;background:#fff;position:absolute;left:0.01rem;top:0.01rem;border:1px solid #ccc;}
+#kt_zan:checked+.kt_zan{background:#4cda64;}
+#kt_zan:checked+.kt_zan>span{right:0.01rem;left: auto;}     
+
+
+

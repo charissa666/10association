@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>社群</title>
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/index_asso.css"/>
+		<script src="../../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/jquery1.7.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--loading加载开始-->
+		<div id="s_shade"></div>
+		<div class="spinner" id="spinner">
+			<div class="spinner-container container1">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container2">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container3">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+		</div>
+		<!--loading加载结束-->
+		<!--社群模块 start-->
+		<div class="asso_item1" style="opacity: 0;">
+			<div class="asso_box">
+				<a class="asso_list" href="../高血压社群-交流/asso_detail.html">
+					<img class="asso_logo" src="../../images/asso_logo.jpg" alt="" />
+					<div class="asso_name">
+						<h3>社群运营俱乐部</h3>
+						<p>54986人</p>
+					</div>
+					<div class="asso_mark">
+						<span class="unread"></span>
+						<span class="arrows"></span>
+					</div>
+				</a>
+				<a class="asso_list" href="../高血压社群-交流/asso_detail.html">
+					<img class="asso_logo" src="../../images/asso_logo02.jpg" alt="" />
+					<div class="asso_name">
+						<h3>肌萎缩侧索硬化症</h3>
+						<p>5498人</p>
+					</div>
+					<div class="asso_mark">
+						<span class="unread"></span>
+						<span class="arrows"></span>
+					</div>
+				</a>
+				<a class="asso_list" href="../高血压社群-交流/asso_detail.html">
+					<img class="asso_logo" src="../../images/asso_logo02.jpg" alt="" />
+					<div class="asso_name">
+						<h3>肌萎缩侧索硬化症</h3>
+						<p>5498人</p>
+					</div>
+					<div class="asso_mark">
+						<span class="unread"></span>
+						<span class="arrows"></span>
+					</div>
+				</a>
+				<a class="asso_list" href="../高血压社群-交流/asso_detail.html">
+					<img class="asso_logo" src="../../images/asso_logo02.jpg" alt="" />
+					<div class="asso_name">
+						<h3>肌萎缩侧索硬化症</h3>
+						<p>5498人</p>
+					</div>
+					<div class="asso_mark">
+						<span class="unread"></span>
+						<span class="arrows"></span>
+					</div>
+				</a>
+				<a class="asso_list" href="../高血压社群-交流/asso_detail.html">
+					<img class="asso_logo" src="../../images/asso_logo03.jpg" alt="" />
+					<div class="asso_name">
+						<h3>乳腺癌社群</h3>
+						<p>5986人</p>
+					</div>
+					<div class="asso_mark">
+						<span class="unread"></span>
+						<span class="arrows"></span>
+					</div>
+				</a>
+			</div>
+			<div class="asso_btn">
+				<a class="btn asso_establish" href="../创建社群/create_asso.html">创建</a>
+				<a class="asso_find" href="asso_b.html" id="asso_find">+发现更多</a>
+			</div>
+		</div>
+		<!--社群模块 end-->
+		<nav class="foot">
+			<a class="on" href="javascript:;">社群</a>
+			<a href="asso_b.html">发现</a>
+			<a href="asso_c.html">我的</a>
+		</nav>
+		
+	</body>
+	<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//优化加载
+		var start_time = (new Date()).getTime();
+		var end_time = "" ;
+		var t = setInterval(function(){
+			if(document.readyState=="complete"){
+				aa();
+			}
+		},500)
+		function aa(){
+			end_time = (new Date()).getTime();
+		//		alert(end_time - start_time);
+			clearInterval(t);
+			$('#spinner').hide();
+			$('#s_shade').hide();
+			$(".asso_item1").css('opacity','1');
+		}
+	</script>
+</html>

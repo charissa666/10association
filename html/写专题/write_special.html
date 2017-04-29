@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>写专题</title>
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/write_txt.css"/>
+		<script src="../../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/jquery1.7.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--loading加载开始-->
+		<div id="s_shade"></div>
+		<div class="spinner" id="spinner">
+			<div class="spinner-container container1">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container2">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container3">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+		</div>
+		<!--loading加载结束-->
+		<div class="spe_tit">
+			<input class="spe_inp" type="text" placeholder="标题" id="sep_tit"/>
+		</div>
+		<div class="spe_tag">
+			<ul class="spe_inp" id="sel_tag">
+				<li class="spe_inp_hint">最多可选择3个标签</li>
+			</ul>
+			<input id="tag_inp" type="hidden"/>
+			<ul class="tag_list">
+				<li flg="早期表现" onclick="select_tag(this)">早期表现<span class="tag_span"></span></li>
+				<li flg="治疗方案" onclick="select_tag(this)">治疗方案<span class="tag_span"></span></li>
+				<li flg="小儿高血压" onclick="select_tag(this)">小儿高血压<span class="tag_span"></span></li>
+				<li class="add_tag">+</li>
+			</ul>
+			<!--添加标签 start-->
+			<div class="p_tag">
+				<input type="text" />
+				<div class="p_btn">
+					<span id="p_btn1">取消</span>
+					<span id="p_btn2">确认</span>
+				</div>
+			</div>
+			<!--添加标签 end-->
+		</div>
+		<div class="spe_cont">
+			<span class="spe_hi">内容</span>
+			<div class="spe_text" contenteditable="true" id="spe_text"></div>
+			<p class="add_pic spe_upload" id="add_p">
+				<input type="file" accept="image/*" name="pic[]" class="add_pic_input s_input" id="upload" flg="upl"/>
+			</p>
+			<p id="img_inp" style="display: none;"></p>
+		</div>
+		<input type="hidden" id="art_inp"/>
+		<div class="chat_btn">
+			<a href="../高血压社群-专题/asso_detail_spe.html" class="btn chat_btn1">取消</a>
+			<a href="../高血压社群-专题/asso_detail_spe.html" class="btn chat_btn2" id="spe_send">发布</a>
+		</div>
+	</body>
+	<script src="../../js/write_special.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//优化加载
+		var start_time = (new Date()).getTime();
+		var end_time = "" ;
+		var t = setInterval(function(){
+			if(document.readyState=="complete"){
+				aa();
+			}
+		},500)
+		function aa(){
+			end_time = (new Date()).getTime();
+		//		alert(end_time - start_time);
+			clearInterval(t);
+			$('#spinner').hide();
+			$('#s_shade').hide();
+		}
+	</script>
+</html>

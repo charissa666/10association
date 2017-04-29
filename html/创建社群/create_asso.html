@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>创建社群</title>
+	<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/create_asso.css"/>
+	<script src="../../js/rem.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/jquery1.7.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<!--loading加载开始-->
+	<div id="s_shade"></div>
+	<div class="spinner" id="spinner">
+		<div class="spinner-container container1">
+			<div class="circle1"></div>
+			<div class="circle2"></div>
+			<div class="circle3"></div>
+			<div class="circle4"></div>
+		</div>
+		<div class="spinner-container container2">
+			<div class="circle1"></div>
+			<div class="circle2"></div>
+			<div class="circle3"></div>
+			<div class="circle4"></div>
+		</div>
+		<div class="spinner-container container3">
+			<div class="circle1"></div>
+			<div class="circle2"></div>
+			<div class="circle3"></div>
+			<div class="circle4"></div>
+		</div>
+	</div>
+	<!--loading加载结束-->
+	<form action="">
+		<div class="cre_item1">
+			<span>社群Logo</span>
+			<img id="user_photo" class="user_photo" src="../../images/user_photo.png">
+			<input class="upload_img" id="upload" type="file" accept="image/*" capture="camera"/>
+		</div>
+		<div class="cre_item2">
+			<span>名称</span>
+			<input type="text" placeholder="社群名称" id="cre_name"/>
+		</div>
+		<div class="cre_item3">
+			<span>分类</span>
+			<select id="cre_type">
+				<option value="">请选择分类</option>
+				<option value="1">重大疾病</option>
+				<option value="2">慢病</option>
+				<option value="3">亚健康</option>
+				<option value="4">两性</option>
+				<option value="5">中医中药</option>
+				<option value="6">品牌</option>
+				<option value="7">社区</option>
+				<option value="8">健身</option>
+			</select>
+		</div>
+		<div class="cre_item4">
+			<span>宣言</span>
+			<input type="text" placeholder="未填写" id="xuanyan"/>
+			<i>30字以内</i>
+		</div>
+		<div class="cre_item5">
+			<span class="fl">简介</span>
+			<textarea class="fl" placeholder="写一段简介描述你的社群" id="jianjie"></textarea>
+			<i class="clearfix">40字以内</i>
+		</div>
+		<div class="cre_item9">
+			<span>同步位置</span>
+			<input name="choregion" type="radio" value="1" id="toP" /><label for="toP">到省</label>
+			<input name="choregion" type="radio" value="2" id="toS" /><label for="toS">到市</label>
+			<input name="choregion" type="radio" value="3" id="toQ" /><label for="toQ">到区</label>
+			<input name="choregion" type="radio" value="4" id="toJ" /><label for="toJ">到街道/镇</label>
+		</div>
+		<div class="cre_item8">
+			<span>开通今日最赞</span>
+			<em>
+				<input type="checkbox" id="kt_zan" /><label class="kt_zan" for="kt_zan"><span></span></label>
+			</em>
+		</div>
+		<div class="cre_item6">
+			<p>
+				<span>负责人姓名</span>
+				<input type="text" id="contact_name"/>
+			</p>
+			<p>
+				<span>联系电话</span>
+				<input type="text" id="contact_tel"/>
+			</p>
+		</div>
+		<a class="btn cre_item7" id="crea_btn" href="../高血压社群-交流/asso_detail.html">完成</a>
+	</form>
+</body>
+<script src="../../js/create_asso.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	//优化加载
+	var start_time = (new Date()).getTime();
+	var end_time = "" ;
+	var t = setInterval(function(){
+		if(document.readyState=="complete"){
+			aa();
+		}
+	},500)
+	function aa(){
+		end_time = (new Date()).getTime();
+	//		alert(end_time - start_time);
+		clearInterval(t);
+		$('#spinner').hide();
+		$('#s_shade').hide();
+	}
+</script>
+</html>

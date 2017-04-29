@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>高血压社群</title>
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/spe_cont.css"/>
+		<script src="../../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/jquery1.7.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--loading加载开始-->
+		<div id="s_shade"></div>
+		<div class="spinner" id="spinner">
+			<div class="spinner-container container1">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container2">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container3">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+		</div>
+		<!--loading加载结束-->
+		<div class="pharmacist">
+			<div class="pha_item1">
+				<img src="../../images/pha_img01.jpg"/>
+				<div class="pha_inf">
+					<div class="pha_inf01">
+						<p>高桂香</p>
+						<ul>
+							<li>执业中药师</li>
+						</ul>
+					</div>
+					<div class="pha_inf02">擅长：热情耐心 擅长联合用药</div>
+				</div>
+			</div>
+			<div class="pha_item2">
+				<a href="javascript:;"><img src="../../images/spe_icon2.png"/>文字咨询</a>
+				<a href="400-650-9988"><img src="../../images/spe_icon1.png"/>语音咨询</a>
+			</div>
+		</div>
+		<div class="pharmacist">
+			<div class="pha_item1">
+				<img src="../../images/pha_img01.jpg"/>
+				<div class="pha_inf">
+					<div class="pha_inf01">
+						<p>高桂香</p>
+						<ul>
+							<li>执业中药师</li>
+						</ul>
+					</div>
+					<div class="pha_inf02">擅长：执业5年 擅长儿科用药 热情细心</div>
+				</div>
+			</div>
+			<div class="pha_item2">
+				<a href="javascript:;"><img src="../../images/spe_icon2.png"/>文字咨询</a>
+				<a href="400-650-9988"><img src="../../images/spe_icon1.png"/>语音咨询</a>
+			</div>
+		</div>
+		<div class="pharmacist">
+			<div class="pha_item1">
+				<img src="../../images/pha_img01.jpg"/>
+				<div class="pha_inf">
+					<div class="pha_inf01">
+						<p>高桂香</p>
+						<ul>
+							<li>执业中药师</li>
+							<li>执业西药</li>
+						</ul>
+					</div>
+					<div class="pha_inf02">擅长：执业8年 经验丰富 指导用药精准合理</div>
+				</div>
+			</div>
+			<div class="pha_item2">
+				<a href="javascript:;"><img src="../../images/spe_icon2.png"/>文字咨询</a>
+				<a href="400-650-9988"><img src="../../images/spe_icon1.png"/>语音咨询</a>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		//优化加载
+		var start_time = (new Date()).getTime();
+		var end_time = "" ;
+		var t = setInterval(function(){
+			if(document.readyState=="complete"){
+				aa();
+			}
+		},500)
+		function aa(){
+			end_time = (new Date()).getTime();
+		//		alert(end_time - start_time);
+			clearInterval(t);
+			$('#spinner').hide();
+			$('#s_shade').hide();
+		}
+	</script>
+</html>

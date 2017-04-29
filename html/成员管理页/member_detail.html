@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>高血压社群</title>
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/mem_cont.css"/>
+		<script src="../../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/jquery1.7.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--loading加载开始-->
+		<div id="s_shade"></div>
+		<div class="spinner" id="spinner">
+			<div class="spinner-container container1">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container2">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container3">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+		</div>
+		<!--loading加载结束-->
+		<div class="wrapper">
+			<div class="md_top">
+				<img src="../../images/m_pho01.jpg"/>
+			</div>
+			<div class="md_inf1">
+				<p class="md_name">
+					<span class="cen">香橙</span>
+					<span class="m_tag m_tag_b md_set">管理员</span>
+				</p>
+				<p class="md_city cen">
+					<span>北京</span>
+					<span>女</span>
+				</p>
+			</div>
+			<div class="md_inf2">
+				<div class="md_inf_item">
+					<i>账号信息</i>
+					<span>yf15645415</span>
+				</div>
+				<div class="md_inf_item xuanyan">
+					<i>宣言</i>
+					<span>一辆小破车，无论你喷多贵的车漆，也不会让它内在变更好</span>
+				</div>
+				<div class="md_inf_item">
+					<i>加入时间</i>
+					<span>2016年8月1日</span>
+				</div>
+				<div class="md_inf_item">
+					<i>设为管理员</i>
+					<span>
+						<input type="checkbox" id="set_md" /><label class="set_md" for="set_md"><span></span></label>
+					</span>
+					<script type="text/javascript">
+						$('#set_md').change(function(){
+							if($('#set_md').attr('checked') == 'checked'){
+								$('.md_set').show();
+							}else{
+								$('.md_set').hide();
+							}
+						});
+					</script>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		//优化加载
+		var start_time = (new Date()).getTime();
+		var end_time = "" ;
+		var t = setInterval(function(){
+			if(document.readyState=="complete"){
+				aa();
+			}
+		},500)
+		function aa(){
+			end_time = (new Date()).getTime();
+		//		alert(end_time - start_time);
+			clearInterval(t);
+			$('#spinner').hide();
+			$('#s_shade').hide();
+		}
+
+	</script>
+</html>

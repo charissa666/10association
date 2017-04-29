@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>发交流</title>
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/write_txt.css"/>
+		<script src="../../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/jquery1.7.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/touch.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--loading加载开始-->
+		<div id="s_shade"></div>
+		<div class="spinner" id="spinner">
+			<div class="spinner-container container1">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container2">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+			<div class="spinner-container container3">
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="circle4"></div>
+			</div>
+		</div>
+		<!--loading加载结束-->
+		<form action="" method="">
+			<div class="chat-wrapper">
+				<div class="chat_text">
+					<textarea placeholder="分享交流心得...(最多只能输入140字)" id="chat_txt"></textarea>
+					<div class="upload_pic">
+						<dl class="add_pic"><input type="file" accept="image/*" name="pic[]" class="add_pic_input b_input" id="up2"/></dl>
+					</div>
+				</div>
+				<div class="chat_btn">
+					<a href="javascript:;" class="btn chat_btn1">取消</a>
+					<a href="../高血压社群-交流/asso_detail.html" class="btn chat_btn2" id="chat_send">发布</a>
+					<input type="submit" value="发布" class="chat_sub"/>
+				</div>
+			</div>
+			<!--<div class="pic_hint"><div>好</div></div>-->
+		</form>
+	</body>
+	<script src="../../js/write_chat.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//优化加载
+		var start_time = (new Date()).getTime();
+		var end_time = "" ;
+		var t = setInterval(function(){
+			if(document.readyState=="complete"){
+				aa();
+			}
+		},500)
+		function aa(){
+			end_time = (new Date()).getTime();
+		//		alert(end_time - start_time);
+			clearInterval(t);
+			$('#spinner').hide();
+			$('#s_shade').hide();
+		}
+	</script>
+</html>

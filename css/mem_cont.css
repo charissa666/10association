@@ -1,0 +1,31 @@
+body{background:#f5f5f5;}
+.wrapper{width:7.5rem;}
+.cen{position:absolute;left:50%;transform: translateX(-50%);}
+
+/*社群成员模块*/
+.asso_detail_03{width:7.5rem;}
+.member_list{height:0.9rem;border-bottom:1px solid #e6e6e6;background:#fff;font-size: 0.32rem;}
+.member_list>img{width:0.7rem;height:0.7rem;margin:0.1rem 0.3rem 0.1rem 0.2rem;border-radius: 50%;}
+.member_list>span{display:inline-block;min-width: 1rem;}
+.m_tag{color:#fff;font-size: 0.24rem;padding:0.1rem 0.15rem;border-radius: 0.15rem;}
+.m_tag_a{background:#f4bf20;}
+.m_tag_b{background:#6cd9a3;}
+
+
+/*成员管理详情页*/
+.md_top{height:1.5rem;background:url(../images/md_top_bj.jpg) no-repeat;background-size: contain;position:relative;}
+.md_top>img{width:1.02rem;height:1.02rem;border-radius: 50%;position:absolute;left:50%;margin-left:-0.51rem;bottom:-0.28rem;}
+.md_inf1{height:1.75rem;position:relative;}
+.md_name{margin-top:0.52rem;margin-bottom: 0.34rem;font-size: 0.32rem;height:0.28rem;overflow: hidden;}
+.md_city{margin-bottom: 0.2rem;color:#999;font-size: 0.3rem;clear: both;}
+.md_set{display:none;position:absolute;left:70%;top:-0.05rem;}
+.md_inf2{background:#fff;border-top:1px solid #e6e6e6;}
+.md_inf_item{height:1rem;line-height:1rem;border-bottom:1px solid #e6e6e6;padding:0 0.2rem;}
+.md_inf_item>i{font-size: 0.34rem;display:inline-block;width:1.98rem;height:1rem;float:left;}
+.md_inf_item>span{font-size: 0.32rem;color:#666;}
+.xuanyan{line-height: 0.46rem;}
+#set_md{display: none;}
+.set_md{display:block;float:right;width:1.1rem;height:0.63rem;background:#e5e5e5;border-radius: 0.35rem;margin-top:0.19rem;position:relative;margin-right:0.1rem;}
+.set_md>span{display: block;width:0.56rem;height:0.56rem;border-radius: 50%;background:#fff;position:absolute;left:0.01rem;top:0.01rem;border:1px solid #ccc;}
+#set_md:checked+.set_md{background:#4cda64;}
+#set_md:checked+.set_md>span{right:0.01rem;left: auto;}     
